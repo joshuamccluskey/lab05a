@@ -83,10 +83,9 @@ Test this function by hand in the console to get it working, and when you think 
 let testArray = [2, 3, 4]; //eslint-disable-line
 
 function sumArray(sumArr) { //eslint-disable-line
-
-  let sumOne = sum(testArray[0], testArray[1])[0];
-  let sumAll = sum(sumOne, testArray[2])[0];
-  let sumAllStr = `${testArray[0]},${testArray[1]},${testArray[2]} was passed in as an array of numbers, and ${sumAll} is their sum.`;
+  let sumOne = sum(sumArr[0], sumArr[1])[0];
+  let sumAll = sum(sumOne, sumArr[2])[0];
+  let sumAllStr = `${sumArr[0]},${sumArr[1]},${sumArr[2]} was passed in as an array of numbers, and ${sumAll} is their sum.`;
 
   return [sumAll, sumAllStr];
 
@@ -110,9 +109,9 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiplyArray(multArr) { //eslint-disable-line
-  let proOne = multiply(testArray[0], testArray[1])[0];
-  let proFinal = multiply(proOne, testArray[2])[0];
-  let proFinalStr = `The numbers ${testArray[0]},${testArray[1]},${testArray[2]} have a product of ${proFinal}.`;
+  let proOne = multiply(multArr[0], multArr[1])[0];
+  let proFinal = multiply(proOne, multArr[2])[0];
+  let proFinalStr = `The numbers ${multArr[0]},${multArr[1]},${multArr[2]} have a product of ${proFinal}.`;
 
   return [proFinal, proFinalStr];
 
